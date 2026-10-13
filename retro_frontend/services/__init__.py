@@ -1,0 +1,1 @@
+"""Long-lived services: core registry, sessions, IPC, window host."""
