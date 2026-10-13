@@ -1,0 +1,1 @@
+"""Data models for ROM library, game metadata, and save slots."""
