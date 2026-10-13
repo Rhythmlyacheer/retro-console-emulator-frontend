@@ -1,0 +1,26 @@
+[window]
+title = "Retro Console Emulator Frontend"
+width = 1280
+height = 720
+scale_mode = "integer"      # integer | aspect | stretch
+vsync = true
+fullscreen = false
+
+[video]
+shader = "crt-lottes"       # none | crt-lottes | scanlines
+scanline_strength = 0.35
+bilinear = false
+
+[audio]
+driver = "wasapi"
+buffer_ms = 48
+sample_rate = 48000
+
+[input]
+p1_device = "xinput:0"
+hotkeys = { save_state = "F5", load_state = "F8", fast_forward = "Tab", reset = "F2" }
+
+[paths]
+rom_library = "roms"
+save_dir = "saves"
+state_dir = "states"
