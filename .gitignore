@@ -1,0 +1,46 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ROM libraries — never commit user dumps
+roms/
+!roms/.gitkeep
+saves/
+states/
+*.sav
+*.state
+
+# Cores (user-supplied, licensed separately)
+cores/bin/*
+!cores/bin/.gitkeep
+
+# Logs / runtime
+logs/
+*.log
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS junk
+Thumbs.db
+.DS_Store
