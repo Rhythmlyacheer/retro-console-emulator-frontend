@@ -1,0 +1,45 @@
+# Core registry. DLLs live in cores/bin/ and are NOT committed.
+# `systems` maps to the ROM extensions the core is willing to boot.
+
+[cores.nestopia]
+name = "Nestopia UE"
+dll = "nestopia_libretro.dll"
+systems = ["nes"]
+accuracy = "cycle"
+
+[cores.snes9x]
+name = "Snes9x"
+dll = "snes9x_libretro.dll"
+systems = ["snes"]
+accuracy = "cycle"
+
+[cores.genesis_plus_gx]
+name = "Genesis Plus GX"
+dll = "genesis_plus_gx_libretro.dll"
+systems = ["genesis", "sms", "gamegear"]
+accuracy = "cycle"
+
+[cores.gambatte]
+name = "Gambatte"
+dll = "gambatte_libretro.dll"
+systems = ["gb", "gbc"]
+accuracy = "cycle"
+
+[cores.mgba]
+name = "mGBA"
+dll = "mgba_libretro.dll"
+systems = ["gba"]
+accuracy = "cycle"
+
+[cores.beetle_psx]
+name = "Beetle PSX"
+dll = "mednafen_psx_libretro.dll"
+systems = ["psx"]
+accuracy = "hardware"
+requires_bios = true
+
+[cores.fbneo]
+name = "FinalBurn Neo"
+dll = "fbneo_libretro.dll"
+systems = ["arcade"]
+accuracy = "cycle"
